@@ -69,7 +69,6 @@ namespace WebApi.AddControllers
         }
 
         //Put
-
         [HttpPut("{id}")]
         public IActionResult UpdateBook(int id, [FromBody] Book updatedBook)
         {
@@ -82,7 +81,19 @@ namespace WebApi.AddControllers
             book.PublishDate = updatedBook.PublishDate != default ? updatedBook.PublishDate : book.PublishDate;
             book.Title = updatedBook.Title != default ? updatedBook.Title : book.Title;
 
-            return Ok();    
+            return Ok();
+        }
+
+        //Delete
+        [HttpDelete("{id}")]
+        public IActionResult DeleteBook(int id)
+        {
+            var book = BookList.SingleOrDefault(x => x.Id == id);
+            if (book is null)
+                return BadRequest();
+
+            BookList.Remove(book);
+            return Ok();
         }
     }
 }
