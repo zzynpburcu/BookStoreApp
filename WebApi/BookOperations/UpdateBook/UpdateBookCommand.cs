@@ -27,11 +27,11 @@ namespace WebApi.BookOperations.UpdateBook
 
             _dbContext.SaveChanges();
     }
-
+    }
     public class UpdateBookModel
     {
         public string Title { get; set; }
         public int PageCount { get; set; }
         public int GenreId { get; set; }
     }
-}}
+}
