@@ -43,6 +43,8 @@ namespace WebApi.AddControllers
             {
                 GetBookByIdQuery query = new GetBookByIdQuery(_context,_mapper);
                 query.ID = id;
+                GetBookByIdQueryValidator validator = new GetBookByIdQueryValidator();
+                validator.ValidateAndThrow(query);
                 result = query.Handle();
             }
             catch (Exception ex)
@@ -91,6 +93,8 @@ namespace WebApi.AddControllers
                 UpdateBookCommand command = new UpdateBookCommand(_context);
                 command.ID = id;
                 command.Model = updateBook;
+                 UpdateBookCommandValidator validator = new UpdateBookCommandValidator();
+                validator.ValidateAndThrow(command);
                 command.Handle();
             }
             catch (Exception ex)
