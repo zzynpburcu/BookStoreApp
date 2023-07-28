@@ -31,3 +31,16 @@
 /Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/obj/Debug/net5.0/WebApi.pdb
 /Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/obj/Debug/net5.0/WebApi.genruntimeconfig.cache
 /Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/obj/Debug/net5.0/ref/WebApi.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.InMemory.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/bin/Debug/net5.0/System.Diagnostics.DiagnosticSource.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/bin/Debug/net5.0/AutoMapper.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/bin/Debug/net5.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/bin/Debug/net5.0/Microsoft.Extensions.Options.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/bin/Debug/net5.0/Microsoft.Extensions.Primitives.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/bin/Debug/net5.0/System.Runtime.CompilerServices.Unsafe.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/bin/Debug/net5.0/FluentValidation.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/bin/Debug/net5.0/Newtonsoft.Json.dll

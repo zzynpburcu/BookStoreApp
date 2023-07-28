@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using WebApi.BookOperations.GetBooks;
 using WebApi.Common;
 using WebApi.DBOperations;
 using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 
-namespace WebApi.BookOperations.GetBookById
+namespace WebApi.Application.BookOperations.Queries.GetBookById
 {
     public class GetBookByIdQuery
     {
@@ -21,7 +21,7 @@ namespace WebApi.BookOperations.GetBookById
 
         public BookDetailModel Handle()
         {
-            var book = _dbContext.Books.Where(book => book.Id == ID).SingleOrDefault();
+            var book = _dbContext.Books.Include(x => x.Genre).Where(book => book.Id == ID).SingleOrDefault();
             if (book is null)
                throw new InvalidOperationException("Kitap mevcut değil");
             BookDetailModel vm = _mapper.Map<BookDetailModel>(book);
