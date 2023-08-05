@@ -35,6 +35,7 @@ namespace WebApi.DBOperations
                         Title = "Lean Startup",
                         GenreId = 1, //Personal growth
                         PageCount = 200,
+                        AuthorId = 2,
                         PublishDate = new DateTime(2001, 06, 12)
                     },
                      new Book
@@ -43,6 +44,7 @@ namespace WebApi.DBOperations
                          Title = "Herland",
                          GenreId = 2, //Science Fiction
                          PageCount = 250,
+                         AuthorId = 3,
                          PublishDate = new DateTime(2010, 05, 23)
                      },
                      new Book
@@ -51,8 +53,26 @@ namespace WebApi.DBOperations
                          Title = "Dune",
                          GenreId = 2, //Science Fiction
                          PageCount = 540,
+                         AuthorId = 2,
                          PublishDate = new DateTime(2001, 12, 21)
                      });
+                     context.Authors.AddRange(
+                         new Author{
+                            Name="Stefan",
+                            Surname="Zweig",
+                            BirthDate=new DateTime(1081, 05, 22)
+                         }  ,
+                         new Author{
+                            Name="Lev Nikolayeviç",
+                            Surname="Tolstoy",
+                            BirthDate=new DateTime(1953, 09, 08)
+                         }   ,
+                           new Author{
+                            Name="Cemal",
+                            Surname="Süreya",
+                            BirthDate=new DateTime(1965, 01, 14)
+                         }  
+                     );
 
                      context.SaveChanges();
             }

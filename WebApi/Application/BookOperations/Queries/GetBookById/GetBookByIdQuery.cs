@@ -12,7 +12,7 @@ namespace WebApi.Application.BookOperations.Queries.GetBookById
     {
         private readonly BookStoreDbContext _dbContext;
         private readonly IMapper _mapper;
-        public int ID {get; set;}
+        public int ID { get; set; }
         public GetBookByIdQuery(BookStoreDbContext _context, IMapper mapper)
         {
             _dbContext = _context;
@@ -21,22 +21,25 @@ namespace WebApi.Application.BookOperations.Queries.GetBookById
 
         public BookDetailModel Handle()
         {
-            var book = _dbContext.Books.Include(x => x.Genre).Where(book => book.Id == ID).SingleOrDefault();
+            var book = _dbContext.Books.Include(x => x.Genre).Include(x => x.Author).OrderBy(book => book.Id == ID).FirstOrDefault();
             if (book is null)
-               throw new InvalidOperationException("Kitap mevcut değil");
+                throw new InvalidOperationException("Kitap mevcut değil");
             BookDetailModel vm = _mapper.Map<BookDetailModel>(book);
-                    
-                
+
+
             return vm;
-           
+
         }
 
     }
-    public class BookDetailModel{
-          public string Title { get; set; }
-            public string Genre { get; set; }
-            public int PageCount { get; set; }
-            public string PublishDate { get; set; }
+    public class BookDetailModel
+    {
+        public string Title { get; set; }
+        public string Genre { get; set; }
+        public string AuthorName { get; set; }
+        public string AuthorSurname { get; set; }
+        public int PageCount { get; set; }
+        public string PublishDate { get; set; }
 
     }
 }
