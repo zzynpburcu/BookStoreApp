@@ -51,9 +51,9 @@ namespace WebApi.DBOperations
                      {
                        //  Id = 3,
                          Title = "Dune",
-                         GenreId = 2, //Science Fiction
+                         GenreId = 1, //Science Fiction
                          PageCount = 540,
-                         AuthorId = 2,
+                         AuthorId = 1,
                          PublishDate = new DateTime(2001, 12, 21)
                      });
                      context.Authors.AddRange(
