@@ -43,7 +43,7 @@ namespace Application.BookOperations.Commands.CreateBook
        {
         //arrange
         CreateBookCommand command = new CreateBookCommand(_context,_mapper);
-        CreateBookModel model = new CreateBookModel() { Title ="Hobbit", PageCount=1000,PublishDate=DateTime.Now.AddYears(-10),GenreId=2,AuthorId=1};
+        CreateBookModel model = new CreateBookModel() { Title ="Lord of the Rings", PageCount=1000,PublishDate=DateTime.Now.AddYears(-10),GenreId=2,AuthorId=1};
         command.Model = model;
 
         //act

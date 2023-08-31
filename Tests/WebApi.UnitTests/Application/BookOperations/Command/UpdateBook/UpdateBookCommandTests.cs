@@ -34,9 +34,10 @@ namespace Application.BookOperations.Commands.UpdateBook
         {
             //arrange
             UpdateBookCommand command = new UpdateBookCommand(_context);
+            command.ID=2;
             UpdateBookModel model = new UpdateBookModel() { Title = "Hobbit", PageCount = 1000, GenreId = 2};
             command.Model = model;
-            command.ID=1;
+            
 
             //act
             FluentActions.Invoking(() => command.Handle()).Invoke();
