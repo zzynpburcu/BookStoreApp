@@ -19,7 +19,7 @@ namespace WebApi.Application.AuthorOperations.Commands.UpdateAuthor
     {
             var author = _dbContext.Authors.SingleOrDefault(x => x.Id == ID);
             if (author is null)
-                throw new InvalidOperationException("Kitap mevcut değil");
+                throw new InvalidOperationException("Yazar mevcut değil");
 
             author.Name = Model.Name != default ? Model.Name : author.Name;
             author.Surname = Model.Surname != default ? Model.Surname : author.Surname;

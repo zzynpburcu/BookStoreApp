@@ -17,11 +17,13 @@ namespace WebApi.Application.AuthorOperations.Commands.DeleteAuthor
         public void Handle()
         {
             var author = _dbcontext.Authors.SingleOrDefault(x => x.Id == ID);
-            var book = _dbcontext.Books.SingleOrDefault(x=>x.AuthorId == author.Id);
-            if (author is null)
+             if (author is null)
                 throw new InvalidOperationException("Yazar mevcut değil");
-            else if(book is not null)
+
+            var book = _dbcontext.Books.FirstOrDefault(x=>x.AuthorId == author.Id);
+            if(book is not null)
                  throw new InvalidOperationException("Kitabı mevcut olan bir yazar silinemez.Yazarı silmek için lütfen önce kitabını siliniz.");
+           
             _dbcontext.Authors.Remove(author);
             _dbcontext.SaveChanges();
         }
