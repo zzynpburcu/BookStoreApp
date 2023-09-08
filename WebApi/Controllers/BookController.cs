@@ -1,9 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using AutoMapper;
 using FluentValidation;
-using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Application.BookOperations.Commands.CreateBook;
 using WebApi.Application.BookOperations.Commands.DeleteBook;
@@ -12,17 +8,19 @@ using WebApi.Application.BookOperations.Queries.GetBooks;
 using WebApi.Application.BookOperations.Commands.UpdateBook;
 using WebApi.DBOperations;
 using static WebApi.Application.BookOperations.Commands.CreateBook.CreateBookCommand;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebApi.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]s")]
-    public class BookControlller : ControllerBase
+    public class BookController : ControllerBase
     {
         private readonly IBookStoreDbContext _context;
         private readonly IMapper _mapper;
 
-        public BookControlller(IBookStoreDbContext context, IMapper mapper)
+        public BookController(IBookStoreDbContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;

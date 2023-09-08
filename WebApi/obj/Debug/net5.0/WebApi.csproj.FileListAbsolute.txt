@@ -44,3 +44,10 @@
 /Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/obj/Debug/net5.0/WebApi.pdb
 /Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/obj/Debug/net5.0/WebApi.genruntimeconfig.cache
 /Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/obj/Debug/net5.0/ref/WebApi.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/bin/Debug/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/bin/Debug/net5.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/bin/Debug/net5.0/Microsoft.IdentityModel.Logging.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/WebApi/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll

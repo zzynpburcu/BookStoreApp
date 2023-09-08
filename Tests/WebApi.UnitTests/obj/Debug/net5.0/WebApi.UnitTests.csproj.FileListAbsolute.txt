@@ -133,3 +133,10 @@
 /Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/Tests/WebApi.UnitTests/bin/Debug/net5.0/Microsoft.Extensions.Logging.dll
 /Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/Tests/WebApi.UnitTests/bin/Debug/net5.0/Microsoft.Extensions.Logging.Abstractions.dll
 /Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/Tests/WebApi.UnitTests/bin/Debug/net5.0/System.Collections.Immutable.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/Tests/WebApi.UnitTests/bin/Debug/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/Tests/WebApi.UnitTests/bin/Debug/net5.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/Tests/WebApi.UnitTests/bin/Debug/net5.0/Microsoft.IdentityModel.Logging.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/Tests/WebApi.UnitTests/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/Tests/WebApi.UnitTests/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/Tests/WebApi.UnitTests/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll
+/Users/zeynepkayhan/Desktop/Practics/Patika/BookStoreApp/Tests/WebApi.UnitTests/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll
